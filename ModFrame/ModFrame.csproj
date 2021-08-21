@@ -7,8 +7,8 @@
     <ProjectGuid>{F9B815D6-6EF4-44DB-9A0F-436849B24670}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ModFrame</RootNamespace>
-    <AssemblyName>ModFrame</AssemblyName>
+    <RootNamespace>HudReplacer</RootNamespace>
+    <AssemblyName>HudReplacer</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <LangVersion>9</LangVersion>
@@ -74,13 +74,113 @@
     <Reference Include="UnityEngine">
       <HintPath>$(GamePath)\unstripped_corlib\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(GamePath)\unstripped_corlib\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim-jotunn\unstripped_corlib\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\ContentSizeAggregator.cs">
+      <Link>MonoScripts\ContentSizeAggregator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\ContentSizer.cs">
+      <Link>MonoScripts\ContentSizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\Draggable.cs">
+      <Link>MonoScripts\Draggable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\FlexibleGridLayout.cs">
+      <Link>MonoScripts\FlexibleGridLayout.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\FoodList.cs">
+      <Link>MonoScripts\FoodList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\GDPower.cs">
+      <Link>MonoScripts\GDPower.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\HealthBar.cs">
+      <Link>MonoScripts\HealthBar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\JustDrag.cs">
+      <Link>MonoScripts\JustDrag.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\Skill.cs">
+      <Link>MonoScripts\Skill.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillBar.cs">
+      <Link>MonoScripts\SkillBar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillTest.cs">
+      <Link>MonoScripts\SkillTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\StaminaBar.cs">
+      <Link>MonoScripts\StaminaBar.cs</Link>
+    </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="GuardianHud.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\ContentSizeAggregator.cs.meta">
+      <Link>MonoScripts\ContentSizeAggregator.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\ContentSizer.cs.meta">
+      <Link>MonoScripts\ContentSizer.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\Draggable.cs.meta">
+      <Link>MonoScripts\Draggable.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\FlexibleGridLayout.cs.meta">
+      <Link>MonoScripts\FlexibleGridLayout.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\FoodList.cs.meta">
+      <Link>MonoScripts\FoodList.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\GDPower.cs.meta">
+      <Link>MonoScripts\GDPower.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\HealthBar.cs.meta">
+      <Link>MonoScripts\HealthBar.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\JustDrag.cs.meta">
+      <Link>MonoScripts\JustDrag.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\Skill.cs.meta">
+      <Link>MonoScripts\Skill.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillBar.cs.meta">
+      <Link>MonoScripts\SkillBar.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillBarz.asmdef">
+      <Link>MonoScripts\SkillBarz.asmdef</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillBarz.asmdef.meta">
+      <Link>MonoScripts\SkillBarz.asmdef.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\SkillTest.cs.meta">
+      <Link>MonoScripts\SkillTest.cs.meta</Link>
+    </Content>
+    <Content Include="..\..\..\Desktop\Skills\SkillBar\SkillBarz\UnityProject\Assets\SkillBar\MonoScripts\StaminaBar.cs.meta">
+      <Link>MonoScripts\StaminaBar.cs.meta</Link>
+    </Content>
+    <EmbeddedResource Include="stockreplacer" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
