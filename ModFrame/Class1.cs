@@ -12,7 +12,7 @@ namespace HudReplacer
     public class HudReplacer : BaseUnityPlugin
     {
         internal const string ModName = "HudReplacer";
-        internal const string ModVersion = "2.0";
+        internal const string ModVersion = "0.0.4";
         private const string ModGUID = "com.zarboz.hudreplacer";
 
         private static GameObject NewHud;
