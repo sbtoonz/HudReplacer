@@ -78,11 +78,13 @@ namespace HudReplacer
                 __instance.m_foodBarRoot.gameObject.SetActive(false);
                 __instance.m_healthPanel.gameObject.SetActive(false);
                 HudSwap.transform.SetSiblingIndex(__instance.m_gpRoot.transform.GetSiblingIndex());
+                //Maybe we can add a color edit toggle here cuz its neat
               }
 
             public static void Prefix(Hud __instance)
             {
-                HudSwap = Instantiate(NewHud, __instance.gameObject.transform, false); 
+                HudSwap = Instantiate(NewHud, __instance.m_rootObject.transform, false); 
+                __instance.m_gpRoot.transform.Find("Bkg").gameObject.SetActive(false);
                 HudSwap.transform.localPosition = HudLocation.Value;
             }
         }
