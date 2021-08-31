@@ -11,8 +11,8 @@ namespace HudReplacer
     [BepInPlugin(ModGUID, ModName, ModVersion)]
     public class HudReplacer : BaseUnityPlugin
     {
-        private const string ModName = "HudReplacer";
-        private const string ModVersion = "2.0";
+        internal const string ModName = "HudReplacer";
+        internal const string ModVersion = "2.0";
         private const string ModGUID = "com.zarboz.hudreplacer";
 
         private static GameObject NewHud;
