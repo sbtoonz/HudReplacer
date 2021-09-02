@@ -12,7 +12,7 @@ namespace HudReplacer
     public class HudReplacer : BaseUnityPlugin
     {
         internal const string ModName = "HudReplacer";
-        internal const string ModVersion = "0.0.4";
+        internal const string ModVersion = "0.0.5";
         private const string ModGUID = "com.zarboz.hudreplacer";
 
         private static GameObject NewHud;
@@ -22,7 +22,7 @@ namespace HudReplacer
         private static ConfigEntry<Color> HealthBG;
         private static ConfigEntry<Color> HealthHotline;
         private static ConfigEntry<Color> UnfilledBG;
-        private Vector3 barPostion;
+        private Vector3 barPostion = new Vector3(-1027.516f, -529.0714f, 0f);
         private static readonly int MainColor = Shader.PropertyToID("_MainColor");
         private static readonly int HotlineColor = Shader.PropertyToID("_HotLineColor");
         private static readonly int UnfilledColor = Shader.PropertyToID("_AlphaColor");
@@ -41,6 +41,7 @@ namespace HudReplacer
                 "The Color of the Healthbar Hotline or the burn line at the top of the health when it is low or filling");
             UnfilledBG = Config.Bind("General", "SkillBar Health Unfilled Color", new Color(0f, 0f, 0f, 0f),
                 "The Color of the unfilled portion of the Healthbar background");
+            //Todo:Set the location of this default to be a more normal on screen position than smack dab in the middle
         }
 
         public void Update()
