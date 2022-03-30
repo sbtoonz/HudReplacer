@@ -25,7 +25,7 @@ namespace HudReplacer
                 GDPower.GuardianSprite = _guardianPower.m_icon;
                 GDPower.CooldownTxt = TimeFomat(Mathf.CeilToInt(_cooldown));
                 GDPower.GDName = Localization.instance.Localize(_guardianPower.m_name);
-                GDPower.GDKey = Localization.instance.Localize("$KEY_GPower");
+                GDPower.GDKey = Localization.instance.Localize("$KEY_GP");
                 GDPower.rawcooldown = _cooldown;
             }
         }

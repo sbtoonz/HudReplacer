@@ -12,7 +12,7 @@ namespace HudReplacer
     public class HudReplacer : BaseUnityPlugin
     {
         internal const string ModName = "HudReplacer";
-        internal const string ModVersion = "0.0.5";
+        internal const string ModVersion = "0.0.6";
         private const string ModGUID = "com.zarboz.hudreplacer";
 
         private static GameObject NewHud;
@@ -22,7 +22,7 @@ namespace HudReplacer
         private static ConfigEntry<Color> HealthBG;
         private static ConfigEntry<Color> HealthHotline;
         private static ConfigEntry<Color> UnfilledBG;
-        private Vector3 barPostion = new Vector3(-1027.516f, -529.0714f, 0f);
+        private Vector3 barPostion = new Vector3(-971.7189F, -541.4063f, 0f);
         private static readonly int MainColor = Shader.PropertyToID("_MainColor");
         private static readonly int HotlineColor = Shader.PropertyToID("_HotLineColor");
         private static readonly int UnfilledColor = Shader.PropertyToID("_AlphaColor");
